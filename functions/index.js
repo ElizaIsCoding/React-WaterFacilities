@@ -50,51 +50,51 @@ exports.userJoined = functions.auth.user()
 
 
 
-  exports.timer = functions.firestore.document("projects/{projectId}")
-  .onCreate(()=> {
-    const timer = 0;
-    const [time, setTime ] = useState({});
-    const [seconds, setSeconds ] = useState(14400);
+  // exports.timer = functions.firestore.document("projects/{projectId}")
+  // .onCreate(()=> {
+  //   const timer = 0;
+  //   const [time, setTime ] = useState({});
+  //   const [seconds, setSeconds ] = useState(14400);
      
-    const secondsToTime = (props) => {
-      let hours = Math.floor(secs / (60 * 60));
+  //   const secondsToTime = (props) => {
+  //     let hours = Math.floor(secs / (60 * 60));
   
-      let divisor_for_minutes = secs % (60 * 60);
-      let minutes = Math.floor(divisor_for_minutes / 60);
+  //     let divisor_for_minutes = secs % (60 * 60);
+  //     let minutes = Math.floor(divisor_for_minutes / 60);
   
-      let divisor_for_seconds = divisor_for_minutes % 60;
-      let seconds = Math.ceil(divisor_for_seconds);
+  //     let divisor_for_seconds = divisor_for_minutes % 60;
+  //     let seconds = Math.ceil(divisor_for_seconds);
   
-      let obj = {
-        "h": hours,
-        "m": minutes,
-        "s": seconds
-      };
-      return obj;
-    }
+  //     let obj = {
+  //       "h": hours,
+  //       "m": minutes,
+  //       "s": seconds
+  //     };
+  //     return obj;
+  //   }
   
-    useEffect(()=>{
-      let timeLeftVar = secondsToTime(seconds);
-      setTime({time: timeLeftVar})
-    },[])
+  //   useEffect(()=>{
+  //     let timeLeftVar = secondsToTime(seconds);
+  //     setTime({time: timeLeftVar})
+  //   },[])
    
   
-    const startTimer = (props) => {
-      if (timer === 0 && seconds > 0) {
-        timer = setInterval(countDown, 1000);
-      }
-    }
+  //   const startTimer = (props) => {
+  //     if (timer === 0 && seconds > 0) {
+  //       timer = setInterval(countDown, 1000);
+  //     }
+  //   }
   
-    const countDown = (props) => {
-      let seconds = seconds - 1;
-      setTime({
-        time: secondsToTime(seconds)})
-      setSeconds({
-        seconds: seconds})  
-      }
+  //   const countDown = (props) => {
+  //     let seconds = seconds - 1;
+  //     setTime({
+  //       time: secondsToTime(seconds)})
+  //     setSeconds({
+  //       seconds: seconds})  
+  //     }
   
-      return(
-        startTimer()
+  //     return(
+  //       startTimer()
         // <div>
         //   <button onClick={startTimer}>Start</button>
         //   h: {time.h} m: {time.m} s: {time.s}
