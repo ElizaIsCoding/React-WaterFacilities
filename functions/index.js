@@ -100,11 +100,11 @@ exports.userJoined = functions.auth.user()
         //   h: {time.h} m: {time.m} s: {time.s}
         //   <button onClick={stopTimer}>Pause</button>
         // </div>
-      );
-    }
+    //   );
+    // }
    
      
-    )
+    // )
   
     
   
