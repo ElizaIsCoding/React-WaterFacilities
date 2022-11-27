@@ -4,6 +4,7 @@ import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
 import { connect } from 'react-redux';
 import {useTheme, useThemeUpdate} from "../themeChange";
+import styles from '../../styles/containers.module.css';
 
 const Navbar = (props) => {
 
@@ -17,12 +18,14 @@ const Navbar = (props) => {
     const { auth, profile } = props;
     const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />;
     return (
-        <nav className={themeStyles.className}>
+        <nav className={styles.headerContainer}>
             <div className="container">
                 <Link to='/' className="brand-logo">Water facilities</Link>
                 { auth.isLoaded && links }
+
             </div>
             <button onClick={toggleTheme}>Theme change</button>
+            <p className={styles.headerContainer}>hello</p>
         </nav>
     )
 } 
