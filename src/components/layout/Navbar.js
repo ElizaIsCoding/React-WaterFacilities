@@ -22,7 +22,6 @@ const Navbar = (props) => {
                 <Link to='/' className="brand-logo">Water facilities</Link>
                 { auth.isLoaded && links }
             </div>
-            <button onClick={toggleTheme}>Theme change</button>
         </nav>
     )
 } 
