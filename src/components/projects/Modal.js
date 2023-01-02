@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import M from "materialize-css";
-import "materialize-css/dist/css/materialize.min.css";
 
 class Modal extends Component {
   componentDidMount() {
@@ -24,7 +22,7 @@ class Modal extends Component {
       startingTop: "4%",
       endingTop: "10%"
     };
-    M.Modal.init(this.Modal, options);
+    // M.Modal.init(this.Modal, options);
   }
 
   render() {

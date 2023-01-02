@@ -7,7 +7,6 @@ import {useTheme, useThemeUpdate} from "../themeChange";
 
 const Navbar = (props) => {
 
-    const toggleTheme = useThemeUpdate();
     const darkTheme = useTheme();
 
     const themeStyles = {
