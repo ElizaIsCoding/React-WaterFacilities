@@ -1,0 +1,70 @@
+Index: node_modules/chokidar2/index.js
+===================================================================
+diff --git a/node_modules/chokidar2/index.js b/node_modules/chokidar2/index.js
+deleted file mode 100644
+--- a/node_modules/chokidar2/index.js	(revision 1e9eb4a0293863e8032dcdf013f0cc043462ba6c)
++++ /dev/null	(revision 1e9eb4a0293863e8032dcdf013f0cc043462ba6c)
+@@ -1,1 +0,0 @@
+-module.exports = require("chokidar");
+Index: node_modules/chokidar2/package.json
+===================================================================
+diff --git a/node_modules/chokidar2/package.json b/node_modules/chokidar2/package.json
+deleted file mode 100644
+--- a/node_modules/chokidar2/package.json	(revision 1e9eb4a0293863e8032dcdf013f0cc043462ba6c)
++++ /dev/null	(revision 1e9eb4a0293863e8032dcdf013f0cc043462ba6c)
+@@ -1,11 +0,0 @@
+-{
+-  "name": "chokidar2",
+-  "version": "2.0.0",
+-  "private": true,
+-  "engines": {
+-    "node": "<8.10.0"
+-  },
+-  "dependencies": {
+-    "chokidar": "^2.1.8"
+-  }
+-}
+Index: node_modules/.package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/node_modules/.package-lock.json b/node_modules/.package-lock.json
+--- a/node_modules/.package-lock.json	(revision 1e9eb4a0293863e8032dcdf013f0cc043462ba6c)
++++ b/node_modules/.package-lock.json	(date 1672604086248)
+@@ -3340,10 +3340,6 @@
+         "node": ">=0.10.0"
+       }
+     },
+-    "node_modules/chokidar2": {
+-      "resolved": "node_modules/watchpack/chokidar2",
+-      "link": true
+-    },
+     "node_modules/ci-info": {
+       "version": "1.6.0",
+       "resolved": "https://registry.npmjs.org/ci-info/-/ci-info-1.6.0.tgz",
+Index: src/fonts/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/fonts/.gitignore b/src/fonts/.gitignore
+new file mode 100644
+--- /dev/null	(date 1672604437617)
++++ b/src/fonts/.gitignore	(date 1672604437617)
+@@ -0,0 +1,14 @@
++../../.idea/
++.vscode/
++node_modules/
++build/
++.DS_Store
++*.tgz
++my-app*
++template/src/__tests__/__snapshots__/
++lerna-debug.log
++npm-debug.log*
++yarn-debug.log*
++yarn-error.log*
++/.changelog
++.npm/
+\ No newline at end of file

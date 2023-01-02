@@ -1,0 +1,34 @@
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Default ignored files\r\n/shelf/\r\n/workspace.xml\r\n# Editor-based HTTP Client requests\r\n/httpRequests/\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+--- a/.idea/.gitignore	(revision cfe41da9836b6bbd0e1863fbd645d9de860c17d5)
++++ b/.idea/.gitignore	(date 1672602582979)
+@@ -3,3 +3,4 @@
+ /workspace.xml
+ # Editor-based HTTP Client requests
+ /httpRequests/
++/node_modules
+\ No newline at end of file
+Index: node_modules/toidentifier/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*!\r\n * toidentifier\r\n * Copyright(c) 2016 Douglas Christopher Wilson\r\n * MIT Licensed\r\n */\r\n\r\n/**\r\n * Module exports.\r\n * @public\r\n */\r\n\r\nmodule.exports = toIdentifier\r\n\r\n/**\r\n * Trasform the given string into a JavaScript identifier\r\n *\r\n * @param {string} str\r\n * @returns {string}\r\n * @public\r\n */\r\n\r\nfunction toIdentifier (str) {\r\n  return str\r\n    .split(' ')\r\n    .map(function (token) {\r\n      return token.slice(0, 1).toUpperCase() + token.slice(1)\r\n    })\r\n    .join('')\r\n    .replace(/[^ _0-9a-z]/gi, '')\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/node_modules/toidentifier/index.js b/node_modules/toidentifier/index.js
+--- a/node_modules/toidentifier/index.js	(revision cfe41da9836b6bbd0e1863fbd645d9de860c17d5)
++++ b/node_modules/toidentifier/index.js	(date 1672602017622)
+@@ -18,7 +18,6 @@
+  * @returns {string}
+  * @public
+  */
+-
+ function toIdentifier (str) {
+   return str
+     .split(' ')
