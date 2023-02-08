@@ -9,7 +9,7 @@ import firebase from 'firebase/app';
 import 'firebase/storage';
 import { createProject, addInfo } from '../../store/actions/projectActions';
 import Collapsible from 'react-collapsible';
-import Modal from './Modal';
+// import Modal from './Modal';
 
 
 
@@ -129,7 +129,7 @@ class ProjectDetails extends Component {
                                  <div id='onComplete'></div>
                                 <button className="btn z-depth-1 right"> Submit </button>
                             </form>
-                            <Modal />
+                            {/*<Modal />*/}
                             <div>Posted by {project.authorFirstName} {project.authorLastName}</div>
                             <div>{moment(project.createdAt.toDate()).calendar()}</div>
                             <button data-target="modal1" className="waves-effect waves-light btn modal-trigger lower" href="#modal1" onClick={this.handleSubmit}>Ready</button>

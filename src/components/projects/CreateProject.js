@@ -5,7 +5,7 @@ import { createProject } from '../../store/actions/projectActions';
 import { Redirect } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/storage';
-import Modal from './Modal';
+// import Modal from './Modal';
 
 
 class CreateProject extends Component {
@@ -112,7 +112,7 @@ handleUpload = (e) => {
                     <div id='onComplete'></div>
                     <div className="input-field row">
                         <button data-target="modal1" className="waves-effect waves-light btn modal-trigger" href="#modal1" onClick={this.handleSubmit}> Create </button>
-                      <Modal />
+                      {/*<Modal />*/}
                     </div>
                 </form>
             </div>
