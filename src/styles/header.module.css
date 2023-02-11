@@ -1,22 +1,9 @@
 @import "variables.css";
 
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    background: var(--blackberry-black);
-}
-
-.lightHeader {
-    display: flex;
-    justify-content: space-between;
-    background: var(--blackberry-black);
-    padding:  0 40px;
-}
-
 .lightAvatar {
     height: 55px;
-    background: var(--wash-me);
+    background: var(--mediumPurple);
     color: #0d47a1;
     border-radius: 50%;
     font-weight: 700;
@@ -40,36 +27,47 @@
     margin-right: 5px;
     list-style: none;
     text-align: center;
+    transition: background-color ease-in 0.3s;
+
 }
 
 .linksContainer > li > a {
     text-decoration: none;
-    color: var(--wash-me);
+    color: var(--athensGray);
     font-weight: 700;
 }
 
-.linksContainer > li:hover {
-    background: rgba(0.3, 0.3, 0.5, 0.5);
+.darkLinks li:hover a {
+    color: var(--blackberryBlack)
 }
+
+.darkLinks li:hover {
+    background: var(--athensGray);
+}
+
+.lightLinks li:hover {
+    background: var(--athensGray);
+}
+
+.lightLinks li:hover a {
+    color: var(--mediumPurple)
+}
+
 
 /*logo*/
-.logoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .logo {
-    height: 40px;
-    background: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--athensGray);
+    text-decoration: none;
 }
 
-.link {
-    background: transparent;
-    color: var(--wash-me);
-    font-weight: 700;
-    font-size: 20px;
-    text-decoration: none;
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .lightButton {
@@ -77,36 +75,47 @@
     width: 120px;
     border: none;
     border-radius: 15px;
-    background: var(--wash-me);
-    color: var(--blackberry-black);
+    background: var(--mediumPurple);
+    color: var(--blackberryBlack);
     font-size: 14px;
     font-weight: 600;
 }
 
-/*darkTheme*/
-
-.darkHeader {
+/*header*/
+.header {
     display: flex;
     justify-content: space-between;
-    background: var(--blackberry-black);
-    color: white;
-    padding:  0 40px;
+    padding: 0 80px;
+}
+
+.darkHeader {
+    background: var(--blackberryBlack);
+}
+
+.lightHeader {
+    background: var(--mediumPurple);
 }
 
 .darkButton {
     height: 30px;
     width: 120px;
     border: none;
-    border-radius: 15px;
-    background: var(--wash-me);
+    border-radius: 8px;
+    background: var(--mediumPurple);
     font-size: 14px;
     font-weight: 600;
-    background: var(--maritime-blue);
-    color: var(--wash-me);
+    color: var(--mediumPurple);
 }
 
-.darkLinkContainer {
-    background: black;
+/*theme switching button*/
+.themeButton {
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: var(--athensGray);
+    color: var(--blackberryBlack);
 }
 
 
