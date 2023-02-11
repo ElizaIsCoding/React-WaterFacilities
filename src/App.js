@@ -5,7 +5,6 @@ import Dashboard from './components/dashboard/Dashboard';
 import ProjectDetails from './components/projects/ProjectDetails';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
-import './index.css';
 import CreateProject from './components/projects/CreateProject';
 import Uploaded from './components/Uploaded'
 import Found from './components/projects/Found';
@@ -17,7 +16,7 @@ class App extends Component {
         return (
             <ThemeProvider>
                 <BrowserRouter>
-                    <div className="App">
+                    <div>
                         <Navbar/>
                         <Switch>
                             <Route exact path='/' component={Dashboard}/>
