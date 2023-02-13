@@ -5,3 +5,6 @@ dist/
 .DS_Store
 coverage/
 .vscode/
+.idea
+.iml
+.node_modules

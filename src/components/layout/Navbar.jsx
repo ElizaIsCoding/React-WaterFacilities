@@ -4,23 +4,27 @@ import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
 import { connect } from 'react-redux';
 import {useTheme, useThemeUpdate} from "../themeChange";
+import styles from '../../styles/header.module.css'
+import globalStyles from '../../styles/global.module.css'
 
 const Navbar = (props) => {
 
     const darkTheme = useTheme();
+    const toggleTheme = useThemeUpdate();
 
     const themeStyles = {
-        className: darkTheme ? 'darkTheme' : 'nav-bar blue lighten-2'
+        header: darkTheme ? `${styles.darkHeader}` : `${styles.lightHeader}`,
     }
 
     const { auth, profile } = props;
     const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />;
     return (
-        <nav className={themeStyles.className}>
-            <div className="container">
-                <Link to='/' className="brand-logo">Water facilities</Link>
-                { auth.isLoaded && links }
+        <nav className={`${styles.header} ${themeStyles.header}`}>
+            <div className={styles.linkContainer}>
+                <Link to='/' className={styles.logo}>Water facilities</Link>
+                <button type="submit" onClick={toggleTheme} className={styles.themeButton}>Theme change</button>
             </div>
+            <div>{ auth.isLoaded && links }</div>
         </nav>
     )
 } 

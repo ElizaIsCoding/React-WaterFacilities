@@ -1,0 +1,121 @@
+@import "variables.css";
+
+
+.lightAvatar {
+    height: 55px;
+    background: var(--mediumPurple);
+    color: #0d47a1;
+    border-radius: 50%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    height: 60px;
+}
+
+.linksContainer > li {
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 10px;
+    margin-right: 5px;
+    list-style: none;
+    text-align: center;
+    transition: background-color ease-in 0.3s;
+
+}
+
+.linksContainer > li > a {
+    text-decoration: none;
+    color: var(--athensGray);
+    font-weight: 700;
+}
+
+.darkLinks li:hover a {
+    color: var(--blackberryBlack)
+}
+
+.darkLinks li:hover {
+    background: var(--athensGray);
+}
+
+.lightLinks li:hover {
+    background: var(--athensGray);
+}
+
+.lightLinks li:hover a {
+    color: var(--mediumPurple)
+}
+
+
+/*logo*/
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--athensGray);
+    text-decoration: none;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lightButton {
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    background: var(--mediumPurple);
+    color: var(--blackberryBlack);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.darkHeader {
+    background: var(--blackberryBlack);
+}
+
+.lightHeader {
+    background: var(--mediumPurple);
+}
+
+.darkButton {
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    background: var(--mediumPurple);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mediumPurple);
+}
+
+/*theme switching button*/
+.themeButton {
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: var(--athensGray);
+    color: var(--blackberryBlack);
+}
+
+
