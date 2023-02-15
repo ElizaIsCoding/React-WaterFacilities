@@ -5,7 +5,6 @@ import SignedOutLinks from './SignedOutLinks';
 import { connect } from 'react-redux';
 import {useTheme, useThemeUpdate} from "../themeChange";
 import styles from '../../styles/header.module.css'
-import globalStyles from '../../styles/global.module.css'
 
 const Navbar = (props) => {
 

@@ -8,3 +8,7 @@ coverage/
 .idea
 .iml
 .node_modules
+Changes.xml
+Workspace.xml
+idea/
+
